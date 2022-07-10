@@ -1,0 +1,23 @@
+cabal-version:      2.4
+name:               stlc
+version:            0.1.0.0
+
+executable stlc
+    main-is:            Main.hs
+    other-modules:      Utility
+    build-depends:      
+        base ^>=4.14.3.0,
+        free ^>=5.1,
+        containers ^>=0.6,
+        mtl ^>=2.2,
+        deriving-compat ^>=0.6,
+        base-unicode-symbols ^>=0.2
+    default-language:   Haskell2010
+    default-extensions:
+        LambdaCase,
+        TupleSections,
+        TemplateHaskell,
+        UnicodeSyntax,
+        DeriveFunctor,
+        TypeSynonymInstances,
+        FlexibleInstances
