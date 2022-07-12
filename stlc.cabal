@@ -4,14 +4,23 @@ version:            0.1.0.0
 
 executable stlc
     main-is:            Main.hs
-    other-modules:      Utility
+    other-modules:      
+        Utility,
+        Type,
+        Expr,
+        Infer,
+        Parser,
+        REPL
     build-depends:      
         base ^>=4.14.3.0,
         free ^>=5.1,
         containers ^>=0.6,
         mtl ^>=2.2,
         deriving-compat ^>=0.6,
-        base-unicode-symbols ^>=0.2
+        base-unicode-symbols ^>=0.2,
+        megaparsec ^>=9.2,
+        parser-combinators ^>=1.3,
+        composition ^>=1.0
     default-language:   Haskell2010
     default-extensions:
         LambdaCase,
