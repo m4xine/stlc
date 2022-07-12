@@ -14,7 +14,7 @@ import  Infer                   (infer)
 repl ∷ IO ()
 repl = do
   src ← prompt
-  unless (src ≡ "exit") $ do 
+  unless (src ≡ ":exit") $ do 
     case parseExpr "<stdin>" src of
       Left e → putStrLn $ errorBundlePretty e
       Right a → case infer a of
